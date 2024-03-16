@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DCF4DA"
+    tools:context=".BookAppointmentActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:text="24*7 HealthCare"
+        android:textColor="#74B970"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textViewAppTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:autoSizeMaxTextSize="25sp"
+        android:hint="Book Appointment"
+        android:letterSpacing="0.002"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/editTextAppFullName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewAppTitle"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/edt_bg"
+        android:drawableStart="@drawable/ic_baseline_person_24"
+        android:drawablePadding="10dp"
+        android:ems="10"
+        android:hint="Full Name"
+        android:importantForAutofill="no"
+        android:inputType="textEmailAddress"
+        android:paddingStart="20dp"
+        android:paddingTop="15dp"
+        android:paddingEnd="20dp"
+        android:paddingBottom="15dp"
+        android:singleLine="true"
+        android:textColorHint="@color/white" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextAppFullName"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/edt_bg"
+        android:orientation="horizontal"
+        android:padding="7dp">
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="7dp"
+            android:src="@drawable/address"
+            app:tint="@color/white" />
+
+
+        <EditText
+            android:id="@+id/editTextAppAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="#00FFFFFF"
+            android:ems="10"
+            android:hint="Address"
+            android:importantForAutofill="no"
+            android:inputType="textEmailAddress"
+            android:singleLine="true"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white" />
+    </LinearLayout>
+
+
+    <EditText
+        android:id="@+id/editTextAppContactNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextAppFullName"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="110dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/edt_bg"
+        android:drawableStart="@drawable/baseline_call_24"
+        android:drawablePadding="10dp"
+        android:drawableTint="@color/white"
+        android:ems="10"
+        android:hint="Contact Number"
+        android:importantForAutofill="no"
+        android:inputType="number"
+        android:paddingStart="20dp"
+        android:paddingTop="15dp"
+        android:paddingEnd="20dp"
+        android:paddingBottom="15dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        tools:ignore="NotSibling" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextAppFullName"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="230dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/input_bg"
+        android:drawableStart="@drawable/ic_baseline_security_24"
+        android:drawableEnd="@drawable/baseline_remove_red_eye_24"
+        android:drawablePadding="10dp"
+        android:drawableTint="@color/white"
+        android:ems="10"
+        android:hint="Fees"
+        android:importantForAutofill="no"
+        android:inputType="textPassword"
+        android:paddingStart="20dp"
+        android:paddingTop="15dp"
+        android:paddingEnd="20dp"
+        android:paddingBottom="15dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextAppFullName"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="190dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/edt_bg"
+        android:orientation="horizontal"
+        android:padding="7dp">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="7dp"
+            android:src="@drawable/rupee"
+            app:tint="@color/white" />
+
+
+        <EditText
+            android:id="@+id/editTextAppFees"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="#00FFFFFF"
+            android:ems="10"
+            android:hint="Fees"
+            android:importantForAutofill="no"
+            android:inputType="number"
+            android:singleLine="true"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextAppContactNumber"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="25dp"
+        android:text="Select Date"
+        android:textColor="@color/yellowLight"/>
+
+    <Button
+        android:id="@+id/btnCartDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextAppContactNumber"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="130dp"
+        android:backgroundTint="#00FFFFFF"
+        android:text="10/04/2023" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextAppContactNumber"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="25dp"
+        android:text="Select Time"
+        android:textColor="@color/yellowLight" />
+
+    <Button
+        android:id="@+id/btnCartTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextAppContactNumber"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="130dp"
+        android:layout_marginEnd="20dp"
+        android:backgroundTint="#00FFFFFF"
+        android:text="10:00 AM" />
+
+
+    <Button
+        android:id="@+id/buttonBookAppointment2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextAppContactNumber"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="200dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/btn_bg"
+        android:padding="5dp"
+        android:text="Register"
+        android:textAllCaps="true"
+        tools:ignore="TextSizeCheck" />
+
+    <Button
+        android:id="@+id/buttonBookAppointmentBack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonBookAppointment2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/btn_bg"
+        android:padding="5dp"
+        android:text="Back"
+        android:textAllCaps="true"
+        tools:ignore="TextSizeCheck" />
+
+
+    <TextView
+        android:id="@+id/textViewExistingUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:fontFamily="monospace"
+        android:text="Already Have an Account?"
+        android:textColor="@color/white"
+        android:visibility="gone" />
+
+</RelativeLayout>
